@@ -38,7 +38,7 @@ CREATE TABLE `ventas` (
   CONSTRAINT `ventas_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`) ON DELETE CASCADE,
   CONSTRAINT `ventas_ibfk_2` FOREIGN KEY (`id_empleado`) REFERENCES `empleados` (`id_empleado`) ON DELETE SET NULL,
   CONSTRAINT `ventas_ibfk_3` FOREIGN KEY (`id_gafa`) REFERENCES `gafas` (`id_gafa`) ON DELETE SET NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,6 +47,7 @@ CREATE TABLE `ventas` (
 
 LOCK TABLES `ventas` WRITE;
 /*!40000 ALTER TABLE `ventas` DISABLE KEYS */;
+INSERT INTO `ventas` VALUES (1,1,2,1,'2024-02-10',1),(2,2,4,3,'2024-02-15',1),(3,3,1,5,'2024-03-01',2),(4,4,3,7,'2024-03-10',1),(5,5,6,4,'2024-03-18',1),(6,6,5,2,'2024-04-05',3),(7,7,7,9,'2024-04-12',1),(8,8,9,8,'2024-04-20',1),(9,9,8,10,'2024-05-01',2),(10,10,10,6,'2024-05-10',1);
 /*!40000 ALTER TABLE `ventas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -59,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-15 19:13:34
+-- Dump completed on 2025-10-16 12:16:58

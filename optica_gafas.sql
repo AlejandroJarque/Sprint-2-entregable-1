@@ -38,7 +38,7 @@ CREATE TABLE `gafas` (
   PRIMARY KEY (`id_gafa`),
   KEY `fk_proveedor` (`id_proveedor`),
   CONSTRAINT `fk_proveedor` FOREIGN KEY (`id_proveedor`) REFERENCES `proveedor` (`id_proveedor`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,6 +47,7 @@ CREATE TABLE `gafas` (
 
 LOCK TABLES `gafas` WRITE;
 /*!40000 ALTER TABLE `gafas` DISABLE KEYS */;
+INSERT INTO `gafas` VALUES (1,'Ray-Ban','-1.25','-1.50','Metálica','Negro','Transparente','Transparente',149.99,1),(2,'Oakley','-0.75','-0.50','Plástico','Azul','Verde','Verde',129.50,2),(3,'Gucci','-2.00','-2.25','Metálica','Dorado','Transparente','Transparente',299.90,3),(4,'Prada','-1.75','-1.50','Mixta','Marrón','Gris','Gris',249.00,1),(5,'Vogue','-0.25','-0.25','Plástico','Rojo','Transparente','Transparente',89.99,2),(6,'Carrera','-3.00','-2.75','Metálica','Plateado','Transparente','Transparente',159.00,4),(7,'Police','-1.50','-1.50','Plástico','Negro','Gris','Gris',119.99,5),(8,'Versace','-0.50','-0.75','Mixta','Verde','Transparente','Transparente',179.99,3),(9,'Hawkers','0.00','0.00','Plástico','Blanco','Negro','Negro',49.90,4),(10,'Armani','-2.25','-2.00','Metálica','Gris','Transparente','Transparente',219.90,5);
 /*!40000 ALTER TABLE `gafas` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -59,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-15 19:13:34
+-- Dump completed on 2025-10-16 12:16:58

@@ -41,7 +41,7 @@ CREATE TABLE `proveedor` (
   UNIQUE KEY `telefono` (`telefono`),
   UNIQUE KEY `fax` (`fax`),
   UNIQUE KEY `nif` (`nif`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,6 +50,7 @@ CREATE TABLE `proveedor` (
 
 LOCK TABLES `proveedor` WRITE;
 /*!40000 ALTER TABLE `proveedor` DISABLE KEYS */;
+INSERT INTO `proveedor` VALUES (1,'OptiMax','Calle Industria','12','1','A','Madrid','28001','España','910123456','910654321','B12345678'),(2,'VisionPlus','Av. Europa','45','2','B','Barcelona','08002','España','932345678','932876543','B23456789'),(3,'GafasLux','Calle Marítima','8','3','C','Valencia','46003','España','961234567','961765432','B34567890'),(4,'OjoClaro','Calle Sol','20','4','D','Sevilla','41004','España','954123456','954654321','B45678901'),(5,'VistaPerfecta','Plaza Nueva','10','Bajo','E','Bilbao','48005','España','944123456','944654321','B56789012'),(6,'Optilens','Av. del Puerto','33','1','F','Valencia','46022','España','962111333','962111334','B67890123'),(7,'LensVision','Calle Norte','5','2','G','Madrid','28015','España','911222333','911222334','B78901234'),(8,'SuperOptic','Calle Real','17','3','H','Granada','18006','España','958111222','958111223','B89012345'),(9,'FocusPro','Av. Central','9','1','I','Zaragoza','50007','España','976111000','976111001','B90123456'),(10,'OptyWorld','Calle Jardín','14','4','J','Málaga','29008','España','952111222','952111223','B01234567');
 /*!40000 ALTER TABLE `proveedor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -62,4 +63,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-15 19:13:34
+-- Dump completed on 2025-10-16 12:16:58
